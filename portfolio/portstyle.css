@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+* {
+    margin: 2;
+    padding: 2;
+    box-sizing: border-box;
+    font-family: 'Koulen', sans-serif;
+}
+
+a {
+    text-decoration: underline red solid 3px;
+}
+
+.hero {
+    width: 90%;
+    height: 90vh;
+    background: url(space.jpeg);
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 95px;
+}
+
+.logo {
+    max-height: 65px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 20px 30px;
+}
+
+nav ul li a {
+    color: royalblue;
+    position: relative;
+    padding: 6px 2;
+}
+
+nav ul li a:hover {
+    color: mediumseagreen;
+}
+
+nav ul li a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background: mediumseagreen;
+    transition: .3s;
+    bottom: 0;
+}
+
+nav ul li a:hover:after {
+    width: 100%;
+}
+
+.btn {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 20px 40px;
+    border-radius: 500px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all .4s ease-in-out;
+    background-size: 152% 100%;
+    background: navy;
+    border: 2px solid indigo;
+}
+
+.btn:hover {
+    background: transparent;
+    border-color: maroon;
+    color: magenta;
+}
+
+.content {
+    position: absolute;
+    top: 36%;
+    left: 9%;
+}
+
+.content .title {
+    color: black;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    display: inline-block;
+    margin-bottom: 30px;
+    background: linear-gradient(120deg, yellow 20.69%, orange 50.19%, red 79.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content h1 {
+    color: black;
+    font-size: 80px;
+    font-weight: 800;
+    line-height: 80px;
+    text-transform: inherit;
+    width: 80%;
+}
+
+.content h1 span {
+    color: purple;
+}
+
+.content p {
+    width: 59%;
+    color: red;
+    margin-top: 30px;
+    margin-bottom: 32px;
+}
